@@ -8,7 +8,7 @@ static struct proc_dir_entry *entry;
 
 static int proc_count(struct seq_file *m, void *v){
 	// TODO: it's all yours
-	int count - 0;
+	int count = 0;
 	struct task_struct *task;
 
 	// loop thru each process in the task list
