@@ -38,6 +38,6 @@ static void __exit proc_count_exit(void)
 module_init(proc_count_init);
 module_exit(proc_count_exit);
 
-MODULE_AUTHOR("Michelle");
+MODULE_AUTHOR("Michelle Sun");
 MODULE_DESCRIPTION("CS111 lab0 count proc number");
 MODULE_LICENSE("GPL");
