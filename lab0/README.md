@@ -1,28 +1,35 @@
 # A Kernel Seedling
-TODO: intro
+Lab0 of CS111 for the Winter Quarter of 2025. This lab is to set up a virtual machine and write a kernel module that adds a file to /proc/ to expose internal kernel information.
 
 ## Building
 ```shell
-TODO: cmd for build
+make
 ```
 
 ## Running
 ```shell
-TODO: cmd for running binary
+sudo insmod proc_count.ko
+cat /proc/count
 ```
-TODO: results?
+Result: my proc/count contained: "149"
 
 ## Cleaning Up
 ```shell
-TODO: cmd for cleaning the built binary
+sudo rmmod proc_count
 ```
 
 ## Testing
 ```python
 python -m unittest
 ```
-TODO: results?
+Output:
+```shell
+...
+----------------------------------------------------------------------
+Ran 3 tests in 30.757s
 
+OK
+```
 Report which kernel release version you tested your module on
 (hint: use `uname`, check for options with `man uname`).
 It should match release numbers as seen on https://www.kernel.org/.
@@ -30,4 +37,4 @@ It should match release numbers as seen on https://www.kernel.org/.
 ```shell
 uname -r -s -v
 ```
-TODO: kernel ver?
+Kernel ver: Linux 5.14.8-arch1-1
